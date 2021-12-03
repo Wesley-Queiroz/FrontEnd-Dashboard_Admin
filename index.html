@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Admin Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ububtu:wght@300;400;500;700$display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="wallet"></ion-icon></span>
+              <span class="title">W.Q Soluções</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="people-outline"></ion-icon
+              ></span>
+              <span class="title">Clientes</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="chatbubble-outline"></ion-icon
+              ></span>
+              <span class="title">Mensagem</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="help-outline"></ion-icon
+              ></span>
+              <span class="title">Ajuda</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="settings-outline"></ion-icon
+              ></span>
+              <span class="title">Definições</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="lock-closed-outline"></ion-icon
+              ></span>
+              <span class="title">Senha</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="log-out-outline"></ion-icon
+              ></span>
+              <span class="title">Sair</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+          <!-- barra de busca -->
+          <div class="search">
+            <label for="find">
+              <input type="text" placeholder="Buscar na página" id="find" />
+              <ion-icon name="search-outline"></ion-icon>
+            </label>
+          </div>
+          <!-- user img -->
+          <div class="user">
+            <img src="img/user.png" alt="foto usuário" />
+          </div>
+        </div>
+
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1.504</div>
+              <div class="cardName">Visualição diária</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">80</div>
+              <div class="cardName">Venda</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">284</div>
+              <div class="cardName">Cometário</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">R$ 23.959</div>
+              <div class="cardName">Total recebido</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="cash-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dados da lista -->
+        <div class="details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Pedidos Recentes</h2>
+              <a href="#" class="btn">Ver Todos</a>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>Nome</td>
+                  <td>Preço</td>
+                  <td>Pgmto</td>
+                  <td>Modalidade</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>TV LG 65"</td>
+                  <td>R$5.230,00</td>
+                  <td>À Vista</td>
+                  <td>Cartão</td>
+                  <td><span class="status delivered">Entregue</span></td>
+                </tr>
+
+                <tr>
+                  <td>iPhone 12 64gb</td>
+                  <td>R$6.230,00</td>
+                  <td>Parcelado</td>
+                  <td>Cartão</td>
+                  <td><span class="status return">Devolvido</span></td>
+                </tr>
+
+                <tr>
+                  <td>Ref. Electrolux 500L</td>
+                  <td>R$6.132,00</td>
+                  <td>Parcelado</td>
+                  <td>Cartão</td>
+                  <td><span class="status delivered">Entregue</span></td>
+                </tr>
+
+                <tr>
+                  <td>Home Theater LG</td>
+                  <td>R$2.530,00</td>
+                  <td>À Vista</td>
+                  <td>Cartão</td>
+                  <td><span class="status pending">Pendente</span></td>
+                </tr>
+
+                <tr>
+                  <td>Colchão casal</td>
+                  <td>R$1.460,00</td>
+                  <td>Parcelado</td>
+                  <td>Cartão</td>
+                  <td><span class="status return">Devolvido</span></td>
+                </tr>
+
+                <tr>
+                  <td>Fogão Dako 5 bocas</td>
+                  <td>R$1.399,00</td>
+                  <td>À Vista</td>
+                  <td>Dinheiro</td>
+                  <td><span class="status pending">Pendente</span></td>
+                </tr>
+
+                <tr>
+                  <td>Sofá 3 Lug.</td>
+                  <td>R$2.630,00</td>
+                  <td>Parcelado</td>
+                  <td>Cartão</td>
+                  <td><span class="status delivered">Entregue</span></td>
+                </tr>
+
+                <tr>
+                  <td>TV TCL 42"</td>
+                  <td>R$2.099,00</td>
+                  <td>À Vista</td>
+                  <td>Cartão</td>
+                  <td><span class="status pending">Pendente</span></td>
+                </tr>
+
+                <tr>
+                  <td>PS4 1TB</td>
+                  <td>R$5.730,00</td>
+                  <td>Parcelado</td>
+                  <td>Cartão</td>
+                  <td><span class="status delivered">Entregue</span></td>
+                </tr>
+
+                <tr>
+                  <td>Secadora LG 15KG</td>
+                  <td>R$7.089,00</td>
+                  <td>Parcelado</td>
+                  <td>Cartão</td>
+                  <td><span class="status pending">Pendente</span></td>
+                </tr>
+
+                <tr>
+                  <td>Armário Tram.</td>
+                  <td>R$2.430,00</td>
+                  <td>À Vista</td>
+                  <td>Dinheiro</td>
+                  <td><span class="status delivered">Entregue</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Novos clientes -->
+          <div class="recentCustomers">
+            <div class="cardHeader">
+              <h2>Clientes Recentes</h2>
+            </div>
+            <table>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx">
+                    <img src="./img/user2.jpg" alt="Foto usuário novos" />
+                  </div>
+                </td>
+                <td>
+                  <h4>Silvia H.<br /><span>Teresina-PI</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx">
+                    <img src="./img/user3.jpg" alt="Foto usuário novos" />
+                  </div>
+                </td>
+                <td>
+                  <h4>Lia D.<br /><span>Natal-RN</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx">
+                    <img src="./img/user4.jpg" alt="Foto usuário novos" />
+                  </div>
+                </td>
+                <td>
+                  <h4>Maria F.<br /><span>Recife-PE</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx">
+                    <img src="./img/user5.jpg" alt="Foto usuário novos" />
+                  </div>
+                </td>
+                <td>
+                  <h4>Fábia A.<br /><span>Belo Horizonte-MG</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx">
+                    <img src="./img/user6.jpg" alt="Foto usuário novos" />
+                  </div>
+                </td>
+                <td>
+                  <h4>Sônia<br /><span>Rio de Janeiro-RJ</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx">
+                    <img src="./img/user7.jpg" alt="Foto usuário novos" />
+                  </div>
+                </td>
+                <td>
+                  <h4>João Carlos<br /><span>São Paulo-SP</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx">
+                    <img src="./img/user.png" alt="Foto usuário novos" />
+                  </div>
+                </td>
+                <td>
+                  <h4>Wesley Q.<br /><span>Goiânia-GO</span></h4>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
